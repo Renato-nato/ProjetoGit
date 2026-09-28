@@ -1,0 +1,9 @@
+# videos pesados ficam so no seu computador
+raw/
+out/
+entregas/
+broll_new/*
+!broll_new/caneta_kb.mp4
+.venv/
+__pycache__/
+*.pyc
