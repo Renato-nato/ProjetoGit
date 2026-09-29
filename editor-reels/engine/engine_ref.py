@@ -304,6 +304,24 @@ class ClipReader(Reader):
         self.last = None
 
 
+TOP_H, TOP_0, TOP_TY = 1080, 720, 300  # b-roll "top": area de cima, inicio do degrade, quanto ele desce
+
+
+class TopReader(Reader):
+    """B-roll da tela dividida (mode "top"): clipe inteiro sobre um fundo desfocado dele mesmo, na area de cima.
+    lift = sobe o clipe N px (pessoa na parte de baixo do clipe sumiria no degrade)."""
+
+    def __init__(self, path: Path, start: float = 0.0, lift: int = 0):
+        self.w, self.h = W, TOP_H
+        fc = (f"[0:v]split[a][b];[a]scale={W}:{TOP_H}:force_original_aspect_ratio=increase,crop={W}:{TOP_H},"
+              f"boxblur=24:2,eq=brightness=-0.10:saturation=0.85[bg];[b]scale={W}:{TOP_H}:force_original_aspect_ratio=decrease[fg];"
+              f"[bg][fg]overlay=(W-w)/2:(H-h)/2-{lift},fps={FPS}")
+        self.p = subprocess.Popen(["ffmpeg", "-v", "error", "-ss", f"{start:.3f}", "-i", str(path), "-filter_complex", fc,
+                                   "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+        self.idx = -1
+        self.last = None
+
+
 # ----------------------------------------------------------------------------- mascara da pessoa
 class Segmenter:
     def __init__(self):
@@ -400,6 +418,48 @@ def clean_voice(src: Path, out: Path) -> Path:
     return out
 
 
+def fix_noises(src_wav: Path, spec: dict, out: Path) -> Path:
+    """Barulhos que o noisereduce nao pega (tempos brutos, na voz limpa):
+    "mute": [[t0, t1], ...]       abafa um barulho FORA da fala (estalo, batida), com fade de 12 ms
+    "hp_zones": [[t0, t1, hz]]    filtro de graves forte (6a ordem) so no trecho (pancada/ronco no microfone)
+    "nr_zones": [[t0, t1]]        limpeza extra com o perfil de ruido DO PROPRIO trecho (ruido de fundo que so
+                                  existe ali, ex. elastico esfregando; o perfil geral do video e mais baixo e nao pega)"""
+    mutes, zones, nrz = spec.get("mute", []), spec.get("hp_zones", []), spec.get("nr_zones", [])
+    if not mutes and not zones and not nrz:
+        return src_wav
+    import soundfile as sf
+    from scipy.signal import butter, sosfiltfilt
+    a, sr = sf.read(str(src_wav))
+    f = int(0.012 * sr)
+    for t0, t1 in nrz:
+        import noisereduce as nr
+        i0, i1 = int(t0 * sr), int(t1 * sr)
+        seg = a[i0:i1]
+        win = sr // 20
+        fr = seg[: len(seg) // win * win].reshape(-1, win)
+        rms = np.sqrt((fr ** 2).mean(1))
+        noise = fr[rms <= np.percentile(rms, 15)].ravel()  # as pausas do proprio trecho
+        cl = nr.reduce_noise(y=seg, sr=sr, y_noise=noise, stationary=True, prop_decrease=0.95, n_fft=2048)
+        fl = int(0.05 * sr)
+        w = np.ones(len(seg))
+        w[:fl], w[-fl:] = np.linspace(0, 1, fl), np.linspace(1, 0, fl)  # entra e sai suave
+        a[i0:i1] = seg * (1 - w) + cl * w
+    for t0, t1, hz in zones:
+        i0, i1 = int(t0 * sr), int(t1 * sr)
+        seg = sosfiltfilt(butter(6, hz, "highpass", fs=sr, output="sos"), a[max(0, i0 - f):i1 + f])
+        w = np.ones(len(seg))
+        w[:f], w[-f:] = np.linspace(0, 1, f), np.linspace(1, 0, f)  # entra e sai sem clique
+        a[max(0, i0 - f):i1 + f] = a[max(0, i0 - f):i1 + f] * (1 - w) + seg * w
+    for t0, t1 in mutes:
+        i0, i1 = int(t0 * sr), int(t1 * sr)
+        g = np.ones(i1 - i0 + 2 * f)
+        g[f:-f] = 0
+        g[:f], g[-f:] = np.linspace(1, 0, f), np.linspace(0, 1, f)
+        a[i0 - f:i1 + f] *= g
+    sf.write(str(out), a, sr)
+    return out
+
+
 def build_voice(src_wav: Path, tl: Timeline, out: Path, highpass: int = 70) -> None:
     parts, labels = [], []
     for k, sg in enumerate(tl.segs):
@@ -469,10 +529,26 @@ def render(spec_path: Path, preview: bool = False, until: float | None = None) -
             it["o"] = tl.to_out(it["t"])
         events.append({**ev, "items": items, "o0": tl.to_out(ev["at"]), "o1": tl.to_out(until_raw)})
 
-    brolls, pips = [], []
+    brolls, pips, tops = [], [], []
     for b in spec.get("broll", []):
         o = tl.to_out(b["at"])
-        (pips if b.get("mode") == "pip" else brolls).append({**b, "o0": o, "o1": o + b["dur"]})
+        {"pip": pips, "top": tops}.get(b.get("mode"), brolls).append({**b, "o0": o, "o1": o + b["dur"]})
+    # tela dividida: b-roll em cima, ele desce; clipes seguidos (< 1,4 s) viram um grupo so (sem sobe-e-desce)
+    top_groups = []
+    for b in sorted(tops, key=lambda x: x["o0"]):
+        if top_groups and b["o0"] - top_groups[-1][1] < 1.4:
+            top_groups[-1][1] = max(top_groups[-1][1], b["o1"])
+        else:
+            top_groups.append([b["o0"], b["o1"]])
+
+    def split_p(t):
+        for a, b in top_groups:
+            if a - 0.35 <= t <= b + 0.35:
+                return ease((t - a + 0.35) / 0.35) * ease((b + 0.35 - t) / 0.35)
+        return 0.0
+    top_grad = np.clip((TOP_H - np.arange(TOP_H, dtype=np.float32)) / (TOP_H - TOP_0), 0, 1)
+    top_grad = (top_grad * top_grad * (3 - 2 * top_grad))[:, None, None]
+    top_readers: dict = {}
     PW, PH, PX, PY, PR = 840, 472, (W - 840) // 2, 48, 30  # janela acima da cabeca
     pip_mask = np.zeros((PH, PW), np.uint8)
     cv2.rectangle(pip_mask, (PR, 0), (PW - PR, PH), 255, -1)
@@ -508,12 +584,13 @@ def render(spec_path: Path, preview: bool = False, until: float | None = None) -
     # legenda minima
     cy0 = spec.get("cap_y", 1250)
     moves = [(tl.to_out(a), tl.to_out(b), yy) for a, b, yy in spec.get("cap_moves", [])]
-    cap_y = lambda t: next((yy for a, b, yy in moves if a - 0.2 <= t < b), cy0)  # noqa: E731
+    cap_y = lambda t: (next((yy for a, b, yy in moves if a - 0.2 <= t < b), cy0)  # noqa: E731
+                       + (TOP_TY if any(a - 0.35 <= t <= b + 0.35 for a, b in top_groups) else 0))  # desce com ele
     cap_path = job / "captions.ass"
     build_tiny_captions(words_out, cap_path, cap_y, spec.get("cap_size", 50))
 
     # audio (voz limpa)
-    clean = clean_voice(src, OUT / name / "voice_clean.wav")
+    clean = fix_noises(clean_voice(src, OUT / name / "voice_clean.wav"), spec, job / "voice_fixed.wav")
     voice = job / "voice.wav"
     build_voice(clean, tl, voice, spec.get("highpass", 70))
 
@@ -588,6 +665,26 @@ def render(spec_path: Path, preview: bool = False, until: float | None = None) -
                 img = cv2.addWeighted(bimg, mix, img, 1 - mix, 0)
                 on_broll = mix > 0.5
 
+        # tela dividida (mode "top"): ele desce, b-roll em cima sumindo em degrade ate ele
+        p = split_p(t)
+        if p > 1e-3:
+            img = cv2.warpAffine(img, np.float32([[1, 0, 0], [0, 1, TOP_TY * p]]), (W, H),
+                                 flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+            for ti, tb in enumerate(tops):
+                if not (tb["o0"] - 0.01 <= t <= tb["o1"] + 0.25):
+                    if ti in top_readers:
+                        top_readers.pop(ti).close()
+                    continue
+                if ti not in top_readers:
+                    top_readers[ti] = TopReader(ROOT / tb["file"], tb.get("src_start", 0.0), tb.get("lift", 0))
+                content = top_readers[ti].read()
+                if content is None:
+                    continue
+                a_ = min(ease((t - tb["o0"]) / 0.2), ease((tb["o1"] + 0.25 - t) / 0.25)) * ease(p / 0.6)
+                mA = top_grad * a_
+                img[:TOP_H] = (img[:TOP_H].astype(np.float32) * (1 - mA) + content.astype(np.float32) * mA).astype(np.uint8)
+            on_broll = on_broll or p > 0.5  # texto nao passa "atras" de gente do b-roll
+
         # preto e branco
         bw = 0.0
         for a, b in bw_win:
@@ -609,8 +706,9 @@ def render(spec_path: Path, preview: bool = False, until: float | None = None) -
                     if a <= 0.01:
                         continue
                     fp = it.get("font", FONT_COND)
-                    spr = word_sprite(it["word"], it["size"], it["color"], fp)
-                    base = baseline_of(it["word"], it["size"], it["color"], fp)
+                    stroke = spec.get("giant_stroke", 0.0)  # contorno preto nas palavras grandes
+                    spr = word_sprite(it["word"], it["size"], it["color"], fp, stroke=stroke)
+                    base = baseline_of(it["word"], it["size"], it["color"], fp, stroke=stroke)
                     cy_spr = it["by"] - base + spr.shape[0] / 2
                     sc = 1.0 + (0.08 if it.get("whole") else 0.05) * (1 - ease((t - it["o"]) / 0.22))
                     if abs(sc - 1) > 1e-3:

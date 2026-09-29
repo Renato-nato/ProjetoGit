@@ -71,7 +71,14 @@ O cliente sobe o arquivo para o Drive, na pasta `01_VIDEOS_PRONTOS`.
 - Ele em preto e branco embaixo do b-roll: `"bw": True` no painel.
 - B-roll com a pessoa na parte de baixo do clipe (some no degradê): `"lift": 330` no painel (sobe o clipe em px).
 - Manter uma pausa que o motor cortaria: `"lead": [t]` no spec (o trecho começa exatamente em `t`, tempo bruto).
-- Contorno preto nas palavras gigantes: `"giant_stroke": 0.035` no spec.
+- Contorno preto nas palavras gigantes: `"giant_stroke": 0.035` no spec (vale nos dois motores).
+- Estilo antigo (`engine_ref.py`, specs_ref): b-roll na tela dividida (regra do cliente) = `"mode": "top"` no b-roll.
+  Clipes seguidos viram uma tela dividida só, e a legenda desce junto com ele.
+- Ruídos que o noisereduce geral não pega (tempos brutos, vale nos dois motores):
+  - `"hp_zones": [[t0, t1, 110]]`: pancada ou ronco grave no microfone só naquele trecho.
+  - `"nr_zones": [[t0, t1]]`: ruído de fundo que só existe ali (ex. elástico esfregando). Usa o perfil do próprio trecho.
+  - `"mute": [[t0, t1]]`: só barulho claramente FORA da fala. A voz do Guilherme bate em 0 dB, então um pico
+    colado na palavra quase sempre é sílaba. Abafar cortou a fala no v2. Na dúvida, mande um trecho curto pro cliente ouvir.
 - Trocar uma palavra dita (ex. "nunca" → "não"): cole o áudio da mesma palavra dita em outro ponto do vídeo num
   bruto corrigido (`raw/<nome>_fix.mp4`), transcreva de novo e deixe o trecho que sobrou fora do `keep`.
   Confira o resultado com o transcritor. Exemplo: `specs_clip/v5_full.py`.

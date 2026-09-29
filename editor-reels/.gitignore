@@ -2,6 +2,7 @@
 raw/
 out/
 entregas/
+look/
 broll_new/*
 !broll_new/caneta_kb.mp4
 .venv/

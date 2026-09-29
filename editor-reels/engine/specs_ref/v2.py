@@ -5,6 +5,12 @@ SPEC = {
     "fixes": {"replace": {"82": "o", "122": "14%", "129": "82,5%", "137": "25%", "214": "caneta"},
               "drop": [123, 130, 131, 138, 213]},
     "face": (540, 910), "cap_y": 1200, "music": "485.mp3",
+    "giant_stroke": 0.035,  # contorno preto nas palavras grandes (pedido do Renato, 29/09)
+    # ruido (29/09): pancadas graves no microfone no comeco (ele mexe no elastico)
+    # (NAO abafar 28.8-29.2: o pico ali e o "-de" de "quantidade" falado forte, nao estalo; abafar cortou a fala)
+    "hp_zones": [[1.5, 9.6, 110]],
+    # ruido de fundo ~11 dB acima do resto do video so no comeco (elastico esfregando perto do microfone)
+    "nr_zones": [[0.8, 10.2]],
     "type": [
         {"type": "stack", "at": 1.0, "until": 5.40, "y": 140, "size": 150,
          "lines": ["POR QUE O PESO", "VOLTA QUANDO", "PARA A CANETA?"]},
@@ -28,14 +34,15 @@ SPEC = {
         {"type": "cta", "at": 81.80, "until": 86.9, "y": 170,
          "lines": [{"text": "Comenta", "size": 110, "small": True}, {"text": "CANETA", "size": 330}]},
     ],
-    "bw": [[9.70, 11.80], [32.50, 35.30]],
+    # (29/09: saiu o P&B de 32.50-35.30 "a fome volta" -- piscava P&B/cor/P&B com o b-roll da geladeira)
+    "bw": [[9.70, 11.80]],
     "close": [[27.00, 31.70, 1.25], [56.80, 58.20, 1.30], [69.00, 71.20, 1.22]],
     "props": [{"t0": 1.45, "t1": 3.25, "static": True, "box": [230, 1290, 740, 130], "zoom": 1.18}],
+    # b-roll na tela dividida (regra do projeto): em cima, sumindo em degrade ate ele, que desce (29/09)
     "broll": [
         # "a fome volta / ao normal": geladeira aberta no escuro e o bolo saindo (Pexels 7331512)
-        {"file": "broll_new/px_7331512.mp4", "mode": "fill", "x_off": 0.25, "src_start": 2.3, "at": 34.40, "dur": 0.95},
-        {"file": "broll_new/px_7331512.mp4", "mode": "fill", "x_off": 0.10, "src_start": 9.6, "at": 35.35, "dur": 1.0},
-        # "recupera": pe subindo na balanca (Pexels 7555158)
-        {"file": "broll_new/px_7555158.mp4", "mode": "blurfit", "fg_zoom": 1.35, "src_start": 1.05, "at": 46.06, "dur": 1.1},
+        {"file": "broll_new/px_7331512.mp4", "mode": "top", "src_start": 2.3, "at": 34.40, "dur": 0.95},
+        {"file": "broll_new/px_7331512.mp4", "mode": "top", "src_start": 9.6, "at": 35.35, "dur": 1.0},
+        # (29/09: saiu o b-roll da balanca em "recupera", 46.06 -- Renato quer so as palavras ali)
     ],
 }

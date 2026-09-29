@@ -23,7 +23,7 @@ from PIL import Image, ImageDraw, ImageFilter
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from engine import EDIT, FPS, H, OUT, ROOT, W, Reader, Timeline, ease, load_spec, norm, track_object, track_white  # noqa: E402
 from engine_ref import (ASSETS, FONT_COND, LIME, WHITE, Segmenter, add_music, baseline_of, build_voice, cap_h, layout_event, text_width, clean_voice, fnt,  # noqa: E402
-                        apply_lead, grade, load_words_all, safe_segments, voice_env, word_sprite)
+                        apply_lead, fix_noises, grade, load_words_all, safe_segments, voice_env, word_sprite)
 
 MS = str(ASSETS / "fonts") + "/"
 FONT_XB = MS + "Montserrat-ExtraBold.otf"
@@ -364,7 +364,7 @@ def render(spec_path: Path, preview: bool = False, until: float | None = None) -
             tr = track_object(src, pr["t0"] - 0.5, pr["t1"] + 0.5, pr["init_t"], pr["box"], cache)
         props.append({**pr, "track": tr, "o0": tl.to_out(pr["t0"]), "o1": tl.to_out(pr["t1"])})
 
-    clean = clean_voice(src, OUT / name / "voice_clean.wav")
+    clean = fix_noises(clean_voice(src, OUT / name / "voice_clean.wav"), spec, job / "voice_fixed.wav")
     voice = job / "voice.wav"
     build_voice(clean, tl, voice, spec.get("highpass", 70))
 

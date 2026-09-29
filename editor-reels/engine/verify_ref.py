@@ -48,4 +48,5 @@ for t in ts[:12]:
 S = Image.new("RGB", (220 * 6, 391 * 2))
 for i, t in enumerate(tiles):
     S.paste(t, ((i % 6) * 220, (i // 6) * 391))
+(ROOT / "look").mkdir(exist_ok=True)
 S.save(ROOT / "look" / f"verify_{v}.jpg")
