@@ -1,5 +1,10 @@
 # ProjetoGit — memória do projeto
 
+## Edição de vídeos = SEMPRE este estilo
+Quando o usuário falar em **edição de vídeo** de qualquer forma ("edita esse vídeo", "faz a edição", "editar reels",
+"corta esse vídeo", "coloca legenda", "b-roll", "refaz o vídeo"...), **use automaticamente a skill `editar-reels`**
+e siga o estilo e as regras abaixo, sem perguntar qual estilo usar. Ninguém precisa digitar `/editar-reels`.
+
 ## Edição de Reels "Senhor Tanquinho" (apresentador: Guilherme)
 
 Tudo roda **local**, na pasta `editor-reels/`. O passo a passo completo está na skill

@@ -1,6 +1,6 @@
 ---
 name: editar-reels
-description: Edita um Reel novo do Senhor Tanquinho (Guilherme) no estilo aprovado, com legenda de dois pesos, palavras grandes laranja acima da cabeça, tela dividida sem bordas com b-roll real, zoom nos objetos, áudio limpo e música. Use quando o usuário pedir para editar, refazer ou corrigir vídeos/reels do Guilherme, ou disser "/editar-reels".
+description: Padrão para QUALQUER pedido de edição de vídeo neste projeto. Edita Reels/vídeos (do Guilherme / Senhor Tanquinho ou outros) no estilo aprovado — legenda de dois pesos, palavras grandes laranja acima da cabeça, tela dividida sem bordas com b-roll real, zoom nos objetos, áudio limpo e música. Use sempre que o usuário falar em "edição de vídeo", "editar vídeo", "edita esse vídeo", "reels", "corte", "legenda no vídeo", "b-roll", "refazer/corrigir vídeo", ou mandar um vídeo para editar, mesmo sem dizer /editar-reels.
 ---
 
 # Editar Reels — Senhor Tanquinho
