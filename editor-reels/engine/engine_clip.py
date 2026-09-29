@@ -23,7 +23,7 @@ from PIL import Image, ImageDraw, ImageFilter
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from engine import EDIT, FPS, H, OUT, ROOT, W, Reader, Timeline, ease, load_spec, norm, track_object, track_white  # noqa: E402
 from engine_ref import (ASSETS, FONT_COND, LIME, WHITE, Segmenter, add_music, baseline_of, build_voice, cap_h, layout_event, text_width, clean_voice, fnt,  # noqa: E402
-                        grade, load_words_all, safe_segments, voice_env, word_sprite)
+                        apply_lead, grade, load_words_all, safe_segments, voice_env, word_sprite)
 
 MS = str(ASSETS / "fonts") + "/"
 FONT_XB = MS + "Montserrat-ExtraBold.otf"
@@ -184,13 +184,14 @@ def layout_phrase(ph: dict, size: int, maxw: float = 830) -> None:
 
 # ----------------------------------------------------------------------------- painel: clipe real
 class PanelReader(Reader):
-    def __init__(self, path: Path, start: float = 0.0, yc: float = 0.5, xc: float = 0.5, size=(PW, PH)):
+    def __init__(self, path: Path, start: float = 0.0, yc: float = 0.5, xc: float = 0.5, size=(PW, PH), lift: int = 0):
         PW, PH = size  # noqa: N806
         self.w, self.h = PW, PH
         # imagem inteira (sem cortar a pessoa) centrada sobre um fundo desfocado dela mesma
+        # lift = sobe o clipe N px (pessoa na parte de baixo do clipe sumiria no degrade da tela dividida)
         vf = (f"split[a][b];[a]scale={PW}:{PH}:force_original_aspect_ratio=increase,crop={PW}:{PH},"
               f"boxblur=24:2,eq=brightness=-0.10:saturation=0.85[bg];"
-              f"[b]scale={PW}:{PH}:force_original_aspect_ratio=decrease[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,fps={FPS}")
+              f"[b]scale={PW}:{PH}:force_original_aspect_ratio=decrease[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2-{lift},fps={FPS}")
         self.p = subprocess.Popen(["ffmpeg", "-v", "error", "-ss", f"{start:.3f}", "-i", str(path), "-filter_complex", vf,
                                    "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
         self.idx = -1
@@ -281,8 +282,8 @@ def render(spec_path: Path, preview: bool = False, until: float | None = None) -
 
     words = load_words_all(spec)
     env = voice_env(src)
-    tl = Timeline(safe_segments(words, spec["keep"], env, spec.get("gap", 0.28), spec.get("pad_in", 0.10),
-                                spec.get("pad_out", 0.12)))
+    tl = Timeline(apply_lead(safe_segments(words, spec["keep"], env, spec.get("gap", 0.28), spec.get("pad_in", 0.10),
+                                           spec.get("pad_out", 0.12)), spec.get("lead", [])))
     dur = tl.dur if until is None else min(tl.dur, until)
     nfr = round(dur * FPS)
     print(f"[{name}] {len(tl.segs)} trechos, {tl.dur:.2f}s")
@@ -418,6 +419,12 @@ def render(spec_path: Path, preview: bool = False, until: float | None = None) -
         else:
             guy = cv2.warpAffine(frame, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
         guy = grade(guy)
+        # "bw": True no painel = ele fica em preto e branco enquanto o b-roll esta em cima (entra e sai suave)
+        bw = max((ease((t - pn["o0"]) / 0.35) * ease((pn["hold"] + 0.35 - t) / 0.35)
+                  for pn in panels if pn.get("bw") and pn["o0"] - 0.01 <= t <= pn["hold"] + 0.35), default=0.0)
+        if bw > 1e-3:
+            gray = cv2.cvtColor(guy, cv2.COLOR_RGB2GRAY)[..., None].astype(np.float32)
+            guy = (guy.astype(np.float32) * (1 - bw) + gray * bw).clip(0, 255).astype(np.uint8)
         if FADE:
             img = guy.astype(np.float32)
         elif p > 1e-3:
@@ -443,7 +450,8 @@ def render(spec_path: Path, preview: bool = False, until: float | None = None) -
                                                         interpolation=cv2.INTER_CUBIC)
                 else:
                     if pi not in readers:
-                        readers[pi] = PanelReader(ROOT / pn["file"], pn.get("src_start", 0.0), size=(W, FADE_H))
+                        readers[pi] = PanelReader(ROOT / pn["file"], pn.get("src_start", 0.0), size=(W, FADE_H),
+                                                   lift=pn.get("lift", 0))
                     content = readers[pi].read()
                     if content is None:
                         continue
@@ -499,8 +507,9 @@ def render(spec_path: Path, preview: bool = False, until: float | None = None) -
                     if a <= 0.01:
                         continue
                     fp = it.get("font", FONT_COND)
-                    spr = word_sprite(it["word"], it["size"], it["color"], fp)
-                    base = baseline_of(it["word"], it["size"], it["color"], fp)
+                    stroke = spec.get("giant_stroke", 0.0)  # contorno preto nas palavras gigantes
+                    spr = word_sprite(it["word"], it["size"], it["color"], fp, stroke=stroke)
+                    base = baseline_of(it["word"], it["size"], it["color"], fp, stroke=stroke)
                     sc = 1.0 + 0.08 * (1 - ease((t - it["o"]) / 0.22))
                     cy_spr = ty + s * (it["by"] - base + spr.shape[0] / 2)
                     paste_rgba(layer, spr, TX * p + s * it["x"], cy_spr, a, sc * s)

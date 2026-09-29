@@ -1,0 +1,3287 @@
+{
+  "words": [
+    {
+      "type": "word",
+      "text": "Eu",
+      "start": 0.78,
+      "end": 1.32,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "nunca",
+      "start": 1.32,
+      "end": 1.6,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "falei",
+      "start": 1.6,
+      "end": 1.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "da",
+      "start": 1.86,
+      "end": 2.12,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "caneta",
+      "start": 2.12,
+      "end": 2.54,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "aqui,",
+      "start": 2.54,
+      "end": 3.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "em",
+      "start": 3.18,
+      "end": 3.4,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "10",
+      "start": 3.4,
+      "end": 3.62,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "anos,",
+      "start": 3.62,
+      "end": 4.58,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "nenhuma",
+      "start": 4.78,
+      "end": 5.08,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "vez.",
+      "start": 5.08,
+      "end": 5.64,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Não",
+      "start": 6.32,
+      "end": 6.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "dessa",
+      "start": 6.44,
+      "end": 6.7,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "caneta.",
+      "start": 6.7,
+      "end": 7.18,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Essa",
+      "start": 7.34,
+      "end": 7.54,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "aqui",
+      "start": 7.54,
+      "end": 7.96,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 7.96,
+      "end": 8.08,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "gente",
+      "start": 8.08,
+      "end": 8.26,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pode",
+      "start": 8.26,
+      "end": 8.5,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "até",
+      "start": 8.5,
+      "end": 8.7,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "falar",
+      "start": 8.7,
+      "end": 8.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "sempre.",
+      "start": 8.86,
+      "end": 9.28,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Da",
+      "start": 9.6,
+      "end": 9.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "outra",
+      "start": 9.76,
+      "end": 10.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "caneta.",
+      "start": 10.16,
+      "end": 10.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "A",
+      "start": 11.34,
+      "end": 11.5,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "caneta",
+      "start": 11.5,
+      "end": 11.8,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 11.8,
+      "end": 12.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "emagrece.",
+      "start": 12.0,
+      "end": 12.54,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Eu",
+      "start": 13.4,
+      "end": 13.54,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "vou",
+      "start": 13.54,
+      "end": 13.7,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "falar",
+      "start": 13.7,
+      "end": 13.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "hoje",
+      "start": 13.9,
+      "end": 14.28,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "e",
+      "start": 14.28,
+      "end": 14.46,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "vou",
+      "start": 14.46,
+      "end": 14.64,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "te",
+      "start": 14.64,
+      "end": 14.82,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "dar",
+      "start": 14.82,
+      "end": 14.94,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 14.94,
+      "end": 15.02,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "minha",
+      "start": 15.02,
+      "end": 15.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "opinião",
+      "start": 15.16,
+      "end": 15.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "real",
+      "start": 15.66,
+      "end": 16.06,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "sobre",
+      "start": 16.06,
+      "end": 16.32,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 16.32,
+      "end": 16.54,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "caneta.",
+      "start": 16.54,
+      "end": 16.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Não",
+      "start": 17.06,
+      "end": 17.2,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 17.2,
+      "end": 17.34,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "opinião",
+      "start": 17.34,
+      "end": 17.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "confortável",
+      "start": 17.86,
+      "end": 18.72,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "de",
+      "start": 18.72,
+      "end": 18.96,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "se",
+      "start": 18.96,
+      "end": 19.12,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ouvir.",
+      "start": 19.12,
+      "end": 19.72,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Vamos",
+      "start": 20.94,
+      "end": 21.22,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "primeiro",
+      "start": 21.22,
+      "end": 21.54,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "falar",
+      "start": 21.54,
+      "end": 21.82,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "de",
+      "start": 21.82,
+      "end": 22.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "quem",
+      "start": 22.0,
+      "end": 22.22,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "tem",
+      "start": 22.22,
+      "end": 22.62,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "indicação",
+      "start": 22.62,
+      "end": 23.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "médica",
+      "start": 23.1,
+      "end": 23.52,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "para",
+      "start": 23.52,
+      "end": 23.72,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "usar.",
+      "start": 23.72,
+      "end": 24.06,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Obesidade",
+      "start": 24.62,
+      "end": 25.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "grave,",
+      "start": 25.16,
+      "end": 25.64,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "diabetes",
+      "start": 26.02,
+      "end": 26.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "muito",
+      "start": 26.36,
+      "end": 26.78,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "nesses",
+      "start": 27.92,
+      "end": 28.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "casos,",
+      "start": 28.36,
+      "end": 28.8,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "sinto",
+      "start": 29.16,
+      "end": 29.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 29.36,
+      "end": 29.5,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "eu",
+      "start": 29.5,
+      "end": 29.62,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "não",
+      "start": 29.62,
+      "end": 29.74,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "tenho",
+      "start": 29.74,
+      "end": 29.94,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "nada",
+      "start": 29.94,
+      "end": 30.22,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 30.22,
+      "end": 30.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "dizer,",
+      "start": 30.42,
+      "end": 30.7,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "é",
+      "start": 30.96,
+      "end": 31.14,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "entre",
+      "start": 31.14,
+      "end": 31.24,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 31.24,
+      "end": 31.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pessoa",
+      "start": 31.42,
+      "end": 31.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "e",
+      "start": 31.76,
+      "end": 32.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "o",
+      "start": 32.0,
+      "end": 32.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "médico",
+      "start": 32.1,
+      "end": 32.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "dela",
+      "start": 32.42,
+      "end": 32.92,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "e",
+      "start": 32.92,
+      "end": 33.38,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ponto",
+      "start": 33.38,
+      "end": 33.58,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "final.",
+      "start": 33.58,
+      "end": 33.98,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "O",
+      "start": 34.52,
+      "end": 34.52,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 34.52,
+      "end": 34.64,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "me",
+      "start": 34.64,
+      "end": 34.82,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "incomoda",
+      "start": 34.82,
+      "end": 35.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "não",
+      "start": 35.36,
+      "end": 35.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "é",
+      "start": 35.76,
+      "end": 35.94,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "isso,",
+      "start": 35.94,
+      "end": 36.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "o",
+      "start": 36.78,
+      "end": 36.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 36.9,
+      "end": 37.02,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "me",
+      "start": 37.02,
+      "end": 37.18,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "incomoda",
+      "start": 37.18,
+      "end": 37.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "é",
+      "start": 37.66,
+      "end": 38.18,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "quando",
+      "start": 38.18,
+      "end": 38.38,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "eu",
+      "start": 38.38,
+      "end": 38.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "vejo",
+      "start": 38.66,
+      "end": 38.88,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 38.88,
+      "end": 39.02,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "caneta",
+      "start": 39.02,
+      "end": 39.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "virando",
+      "start": 39.36,
+      "end": 40.06,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 40.06,
+      "end": 40.34,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "primeira",
+      "start": 40.34,
+      "end": 40.7,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "coisa",
+      "start": 40.7,
+      "end": 41.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 41.0,
+      "end": 41.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 41.16,
+      "end": 41.34,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pessoa",
+      "start": 41.34,
+      "end": 41.52,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "tenta,",
+      "start": 41.52,
+      "end": 42.22,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ao",
+      "start": 42.38,
+      "end": 42.48,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "invés",
+      "start": 42.48,
+      "end": 42.68,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "de",
+      "start": 42.68,
+      "end": 42.8,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ser",
+      "start": 42.8,
+      "end": 42.94,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 42.94,
+      "end": 43.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "última,",
+      "start": 43.16,
+      "end": 43.58,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "e",
+      "start": 44.2,
+      "end": 44.38,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "eu",
+      "start": 44.38,
+      "end": 44.5,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "vou",
+      "start": 44.5,
+      "end": 44.58,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "te",
+      "start": 44.58,
+      "end": 44.78,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "explicar",
+      "start": 44.78,
+      "end": 44.96,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "o",
+      "start": 44.96,
+      "end": 45.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "porquê",
+      "start": 45.1,
+      "end": 45.82,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "com",
+      "start": 45.82,
+      "end": 46.02,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "um",
+      "start": 46.02,
+      "end": 46.24,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "argumento",
+      "start": 46.24,
+      "end": 46.58,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 46.58,
+      "end": 46.74,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pra",
+      "start": 46.74,
+      "end": 46.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "mim",
+      "start": 46.86,
+      "end": 47.22,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "é",
+      "start": 47.22,
+      "end": 47.52,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "o",
+      "start": 47.52,
+      "end": 47.62,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "mais",
+      "start": 47.62,
+      "end": 48.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "importante",
+      "start": 48.1,
+      "end": 48.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "de",
+      "start": 48.9,
+      "end": 49.32,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "todos.",
+      "start": 49.32,
+      "end": 49.96,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Quando",
+      "start": 52.6,
+      "end": 53.18,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "alguém",
+      "start": 53.18,
+      "end": 53.56,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "emagrece",
+      "start": 53.56,
+      "end": 54.14,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "com",
+      "start": 54.14,
+      "end": 54.3,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 54.3,
+      "end": 54.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "caneta,",
+      "start": 54.44,
+      "end": 54.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "boa",
+      "start": 55.2,
+      "end": 55.3,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "parte",
+      "start": 55.3,
+      "end": 55.68,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "do",
+      "start": 55.68,
+      "end": 55.88,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 55.88,
+      "end": 55.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ela",
+      "start": 55.9,
+      "end": 56.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "perde",
+      "start": 56.16,
+      "end": 56.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "é",
+      "start": 56.44,
+      "end": 56.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "músculo.",
+      "start": 56.76,
+      "end": 57.58,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Dependendo",
+      "start": 57.94,
+      "end": 58.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "do",
+      "start": 58.42,
+      "end": 58.62,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "remédio",
+      "start": 58.62,
+      "end": 59.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "e",
+      "start": 59.1,
+      "end": 59.22,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "de",
+      "start": 59.22,
+      "end": 59.38,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "outras",
+      "start": 59.38,
+      "end": 59.6,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "condições,",
+      "start": 59.6,
+      "end": 60.2,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "de",
+      "start": 60.66,
+      "end": 60.7,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "25",
+      "start": 60.7,
+      "end": 61.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "%",
+      "start": 61.36,
+      "end": 62.04,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 62.04,
+      "end": 62.22,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "45",
+      "start": 62.22,
+      "end": 62.96,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "%",
+      "start": 62.96,
+      "end": 63.5,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "do",
+      "start": 63.5,
+      "end": 63.72,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "peso",
+      "start": 63.72,
+      "end": 63.98,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "perdido",
+      "start": 63.98,
+      "end": 64.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "é",
+      "start": 64.76,
+      "end": 65.26,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "de",
+      "start": 65.26,
+      "end": 65.56,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "músculo.",
+      "start": 65.56,
+      "end": 66.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "E",
+      "start": 66.46,
+      "end": 66.64,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "não",
+      "start": 66.64,
+      "end": 66.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "sou",
+      "start": 66.76,
+      "end": 66.94,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "eu",
+      "start": 66.94,
+      "end": 67.08,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 67.08,
+      "end": 67.18,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "estou",
+      "start": 67.18,
+      "end": 67.32,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "dizendo",
+      "start": 67.32,
+      "end": 67.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "isso,",
+      "start": 67.66,
+      "end": 68.04,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "isso",
+      "start": 68.18,
+      "end": 68.46,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "está",
+      "start": 68.46,
+      "end": 68.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "nos",
+      "start": 68.66,
+      "end": 68.92,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "próprios",
+      "start": 68.92,
+      "end": 69.48,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "estudos",
+      "start": 69.48,
+      "end": 69.96,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 69.96,
+      "end": 70.2,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "aprovaram",
+      "start": 70.2,
+      "end": 71.08,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "os",
+      "start": 71.08,
+      "end": 71.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "medicamentos.",
+      "start": 71.42,
+      "end": 72.26,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Pra",
+      "start": 72.82,
+      "end": 73.04,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "isso",
+      "start": 73.04,
+      "end": 73.28,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "não",
+      "start": 73.28,
+      "end": 73.5,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "acontecer,",
+      "start": 73.5,
+      "end": 74.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "o",
+      "start": 74.5,
+      "end": 74.6,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 74.6,
+      "end": 74.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "você",
+      "start": 74.76,
+      "end": 75.04,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "tem",
+      "start": 75.04,
+      "end": 75.18,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 75.18,
+      "end": 75.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "fazer?",
+      "start": 75.36,
+      "end": 75.7,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "comer",
+      "start": 75.7,
+      "end": 76.32,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "proteína",
+      "start": 76.32,
+      "end": 76.78,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "de",
+      "start": 76.78,
+      "end": 77.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "verdade",
+      "start": 77.0,
+      "end": 77.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "em",
+      "start": 77.44,
+      "end": 77.68,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "todas",
+      "start": 77.68,
+      "end": 77.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "as",
+      "start": 77.86,
+      "end": 78.14,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "refeições,",
+      "start": 78.14,
+      "end": 78.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "treinar",
+      "start": 79.06,
+      "end": 79.34,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "força",
+      "start": 79.34,
+      "end": 79.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "e",
+      "start": 79.76,
+      "end": 80.24,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "dormir",
+      "start": 80.24,
+      "end": 80.5,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "bem.",
+      "start": 80.5,
+      "end": 80.88,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Só",
+      "start": 81.46,
+      "end": 81.62,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 81.62,
+      "end": 81.78,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pensa",
+      "start": 81.78,
+      "end": 81.98,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "comigo,",
+      "start": 81.98,
+      "end": 82.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "se",
+      "start": 82.92,
+      "end": 83.14,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "você",
+      "start": 83.14,
+      "end": 83.46,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "fizesse",
+      "start": 83.46,
+      "end": 83.92,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "tudo",
+      "start": 83.92,
+      "end": 84.24,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "isso,",
+      "start": 84.24,
+      "end": 84.92,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "você",
+      "start": 85.6,
+      "end": 85.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "não",
+      "start": 85.9,
+      "end": 86.08,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "né,",
+      "start": 86.08,
+      "end": 86.24,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "falar",
+      "start": 86.32,
+      "end": 86.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "de",
+      "start": 86.42,
+      "end": 86.6,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "novo.",
+      "start": 86.6,
+      "end": 87.32,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Agora",
+      "start": 87.94,
+      "end": 88.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pensa",
+      "start": 88.16,
+      "end": 88.48,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "comigo,",
+      "start": 88.48,
+      "end": 89.26,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "só",
+      "start": 89.48,
+      "end": 89.6,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "um",
+      "start": 89.6,
+      "end": 89.74,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "instante.",
+      "start": 89.74,
+      "end": 90.3,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Agora",
+      "start": 92.42,
+      "end": 92.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "repara",
+      "start": 92.66,
+      "end": 93.14,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "comigo,",
+      "start": 93.14,
+      "end": 93.56,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "se",
+      "start": 93.68,
+      "end": 93.88,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 93.88,
+      "end": 94.08,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pessoa",
+      "start": 94.08,
+      "end": 94.22,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "fizesse",
+      "start": 94.22,
+      "end": 94.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "tudo",
+      "start": 94.76,
+      "end": 95.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "isso,",
+      "start": 95.1,
+      "end": 95.48,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "talvez",
+      "start": 95.64,
+      "end": 95.84,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ela",
+      "start": 95.84,
+      "end": 96.04,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "nem",
+      "start": 96.04,
+      "end": 96.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "precisasse",
+      "start": 96.44,
+      "end": 97.3,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "da",
+      "start": 97.3,
+      "end": 97.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "caneta.",
+      "start": 97.66,
+      "end": 98.14,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "E",
+      "start": 98.68,
+      "end": 98.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "tem",
+      "start": 98.9,
+      "end": 99.06,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "uma",
+      "start": 99.06,
+      "end": 99.22,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "segunda",
+      "start": 99.22,
+      "end": 99.58,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "parte,",
+      "start": 99.58,
+      "end": 100.06,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ou",
+      "start": 100.44,
+      "end": 100.68,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 100.68,
+      "end": 100.92,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pessoa",
+      "start": 100.92,
+      "end": 101.22,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "toma",
+      "start": 101.22,
+      "end": 101.64,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 101.64,
+      "end": 101.92,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "caneta",
+      "start": 101.92,
+      "end": 102.26,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pensando",
+      "start": 102.26,
+      "end": 102.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "em",
+      "start": 102.66,
+      "end": 102.88,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "parar",
+      "start": 102.88,
+      "end": 103.06,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "uma",
+      "start": 103.06,
+      "end": 103.34,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "hora,",
+      "start": 103.34,
+      "end": 103.64,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ou",
+      "start": 104.02,
+      "end": 104.24,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ela",
+      "start": 104.24,
+      "end": 104.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "toma",
+      "start": 104.44,
+      "end": 104.6,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pra",
+      "start": 104.6,
+      "end": 104.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "sempre.",
+      "start": 104.9,
+      "end": 105.26,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Se",
+      "start": 105.26,
+      "end": 105.94,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ela",
+      "start": 105.94,
+      "end": 106.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pensa",
+      "start": 106.16,
+      "end": 106.48,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "em",
+      "start": 106.48,
+      "end": 106.62,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "parar",
+      "start": 106.62,
+      "end": 106.84,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "uma",
+      "start": 106.84,
+      "end": 107.12,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "hora,",
+      "start": 107.12,
+      "end": 107.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "no",
+      "start": 107.78,
+      "end": 107.82,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "dia",
+      "start": 107.82,
+      "end": 108.02,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 108.02,
+      "end": 108.2,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ela",
+      "start": 108.2,
+      "end": 108.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "parar,",
+      "start": 108.42,
+      "end": 108.64,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ela",
+      "start": 108.88,
+      "end": 108.96,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "vai",
+      "start": 108.96,
+      "end": 109.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "precisar",
+      "start": 109.16,
+      "end": 109.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "estar",
+      "start": 109.76,
+      "end": 110.06,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "comendo",
+      "start": 110.06,
+      "end": 110.46,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "bem,",
+      "start": 110.46,
+      "end": 110.72,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "dormindo",
+      "start": 110.86,
+      "end": 111.24,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "bem",
+      "start": 111.24,
+      "end": 111.48,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "e",
+      "start": 111.48,
+      "end": 111.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "treinando",
+      "start": 111.66,
+      "end": 112.06,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "bem.",
+      "start": 112.06,
+      "end": 112.46,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Então",
+      "start": 113.26,
+      "end": 113.26,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "talvez",
+      "start": 113.26,
+      "end": 113.62,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "fosse",
+      "start": 113.62,
+      "end": 113.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "melhor",
+      "start": 113.9,
+      "end": 114.18,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ter",
+      "start": 114.18,
+      "end": 114.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "começado",
+      "start": 114.44,
+      "end": 114.92,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "por",
+      "start": 114.92,
+      "end": 115.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "aí.",
+      "start": 115.16,
+      "end": 115.56,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Agora,",
+      "start": 115.86,
+      "end": 116.26,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "se",
+      "start": 116.3,
+      "end": 116.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ela",
+      "start": 116.44,
+      "end": 116.64,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "está",
+      "start": 116.64,
+      "end": 117.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "tomando",
+      "start": 117.0,
+      "end": 117.46,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "e",
+      "start": 117.46,
+      "end": 117.5,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pensando",
+      "start": 117.5,
+      "end": 117.8,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "em",
+      "start": 117.8,
+      "end": 117.92,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "tomar",
+      "start": 117.92,
+      "end": 118.12,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "para",
+      "start": 118.12,
+      "end": 118.46,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "sempre,",
+      "start": 118.46,
+      "end": 118.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "é",
+      "start": 119.32,
+      "end": 119.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "importante",
+      "start": 119.44,
+      "end": 119.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 119.86,
+      "end": 120.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "gente",
+      "start": 120.0,
+      "end": 120.24,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "considerar",
+      "start": 120.24,
+      "end": 120.74,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 120.74,
+      "end": 120.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "esse",
+      "start": 120.86,
+      "end": 121.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "é",
+      "start": 121.0,
+      "end": 121.14,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "um",
+      "start": 121.14,
+      "end": 121.14,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "remédio",
+      "start": 121.14,
+      "end": 121.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "novo.",
+      "start": 121.42,
+      "end": 121.98,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Ninguém",
+      "start": 122.32,
+      "end": 122.6,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "sabe",
+      "start": 122.6,
+      "end": 122.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "o",
+      "start": 122.86,
+      "end": 123.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 123.0,
+      "end": 123.08,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "vai",
+      "start": 123.08,
+      "end": 123.3,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "acontecer",
+      "start": 123.3,
+      "end": 123.84,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "com",
+      "start": 123.84,
+      "end": 124.26,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "30",
+      "start": 124.26,
+      "end": 124.58,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "anos",
+      "start": 124.58,
+      "end": 125.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "tomando",
+      "start": 125.16,
+      "end": 125.56,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "caneta,",
+      "start": 125.56,
+      "end": 126.06,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "porque",
+      "start": 126.32,
+      "end": 126.58,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "30",
+      "start": 126.58,
+      "end": 126.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "anos",
+      "start": 126.86,
+      "end": 127.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ainda",
+      "start": 127.1,
+      "end": 127.48,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "nem",
+      "start": 127.48,
+      "end": 127.88,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "existem",
+      "start": 127.88,
+      "end": 128.34,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "nesse",
+      "start": 128.34,
+      "end": 128.78,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "medicamento.",
+      "start": 128.78,
+      "end": 129.64,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "De",
+      "start": 129.96,
+      "end": 129.96,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "novo.",
+      "start": 129.96,
+      "end": 130.7,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Agora,",
+      "start": 133.92,
+      "end": 134.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "se",
+      "start": 134.8,
+      "end": 134.94,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ela",
+      "start": 134.94,
+      "end": 135.14,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "for",
+      "start": 135.14,
+      "end": 135.38,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "tomar",
+      "start": 135.38,
+      "end": 135.56,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pra",
+      "start": 135.56,
+      "end": 135.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "sempre,",
+      "start": 135.9,
+      "end": 136.32,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "é",
+      "start": 136.72,
+      "end": 136.84,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "importante",
+      "start": 136.84,
+      "end": 137.2,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "perceber",
+      "start": 137.2,
+      "end": 137.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 137.66,
+      "end": 137.88,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "esse",
+      "start": 137.88,
+      "end": 138.02,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "é",
+      "start": 138.02,
+      "end": 138.06,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "um",
+      "start": 138.06,
+      "end": 138.18,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "remédio",
+      "start": 138.18,
+      "end": 138.46,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "novo,",
+      "start": 138.46,
+      "end": 138.88,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ninguém",
+      "start": 139.32,
+      "end": 139.56,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "sabe",
+      "start": 139.56,
+      "end": 139.96,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "o",
+      "start": 139.96,
+      "end": 140.2,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 140.2,
+      "end": 140.34,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "são",
+      "start": 140.34,
+      "end": 140.56,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "30",
+      "start": 140.56,
+      "end": 140.88,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "anos",
+      "start": 140.88,
+      "end": 141.2,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "tomando",
+      "start": 141.2,
+      "end": 141.5,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "esse",
+      "start": 141.5,
+      "end": 141.74,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "remédio,",
+      "start": 141.74,
+      "end": 142.06,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "o",
+      "start": 142.12,
+      "end": 142.18,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 142.18,
+      "end": 142.32,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "vai",
+      "start": 142.32,
+      "end": 142.52,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "acontecer,",
+      "start": 142.52,
+      "end": 143.04,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "porque",
+      "start": 143.3,
+      "end": 143.56,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ele",
+      "start": 143.56,
+      "end": 143.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "nem",
+      "start": 143.76,
+      "end": 144.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "existe",
+      "start": 144.0,
+      "end": 144.3,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "há",
+      "start": 144.3,
+      "end": 144.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "30",
+      "start": 144.44,
+      "end": 144.72,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "anos.",
+      "start": 144.72,
+      "end": 145.14,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Não",
+      "start": 145.92,
+      "end": 146.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "existe",
+      "start": 146.44,
+      "end": 146.96,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "almoço",
+      "start": 146.96,
+      "end": 147.52,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "grátis",
+      "start": 147.52,
+      "end": 147.92,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "na",
+      "start": 147.92,
+      "end": 148.12,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "natureza.",
+      "start": 148.12,
+      "end": 149.02,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Olha",
+      "start": 149.32,
+      "end": 149.54,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "onde",
+      "start": 149.54,
+      "end": 149.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "isso",
+      "start": 149.76,
+      "end": 150.08,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "chega,",
+      "start": 150.08,
+      "end": 150.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "o",
+      "start": 150.82,
+      "end": 151.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "trabalho",
+      "start": 151.0,
+      "end": 151.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 151.36,
+      "end": 151.6,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "te",
+      "start": 151.6,
+      "end": 151.84,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "faz",
+      "start": 151.84,
+      "end": 152.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "conseguir",
+      "start": 152.1,
+      "end": 152.62,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "sair",
+      "start": 152.62,
+      "end": 152.88,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "da",
+      "start": 152.88,
+      "end": 153.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "caneta",
+      "start": 153.1,
+      "end": 153.44,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "sem",
+      "start": 153.44,
+      "end": 153.64,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "o",
+      "start": 153.64,
+      "end": 153.8,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "peso",
+      "start": 153.8,
+      "end": 153.98,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "voltar,",
+      "start": 153.98,
+      "end": 154.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "comer",
+      "start": 154.76,
+      "end": 154.86,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "direito,",
+      "start": 154.86,
+      "end": 155.28,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "treinar,",
+      "start": 155.34,
+      "end": 155.7,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "dormir",
+      "start": 155.78,
+      "end": 155.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "bem,",
+      "start": 155.9,
+      "end": 156.18,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "é",
+      "start": 156.52,
+      "end": 156.62,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "o",
+      "start": 156.62,
+      "end": 156.72,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "mesmo",
+      "start": 156.72,
+      "end": 156.94,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "trabalho",
+      "start": 156.94,
+      "end": 157.3,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 157.3,
+      "end": 157.48,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "te",
+      "start": 157.48,
+      "end": 157.68,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "faria",
+      "start": 157.68,
+      "end": 158.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "não",
+      "start": 158.0,
+      "end": 158.3,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "precisar",
+      "start": 158.3,
+      "end": 158.82,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ela.",
+      "start": 158.82,
+      "end": 159.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "De",
+      "start": 159.42,
+      "end": 159.6,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "um",
+      "start": 159.6,
+      "end": 159.72,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "jeito",
+      "start": 159.72,
+      "end": 159.92,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ou",
+      "start": 159.92,
+      "end": 160.06,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "de",
+      "start": 160.06,
+      "end": 160.22,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "outro,",
+      "start": 160.22,
+      "end": 160.46,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "esse",
+      "start": 160.78,
+      "end": 160.82,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "trabalho",
+      "start": 160.82,
+      "end": 161.28,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "existe.",
+      "start": 161.28,
+      "end": 161.92,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "E",
+      "start": 162.36,
+      "end": 162.5,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "é",
+      "start": 162.5,
+      "end": 162.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "esse",
+      "start": 162.66,
+      "end": 162.8,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "trabalho,",
+      "start": 162.8,
+      "end": 163.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "essa",
+      "start": 163.86,
+      "end": 164.08,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "mecânica,",
+      "start": 164.08,
+      "end": 164.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "esses",
+      "start": 164.92,
+      "end": 165.1,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "hábitos",
+      "start": 165.1,
+      "end": 165.7,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 165.7,
+      "end": 165.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "eu",
+      "start": 165.9,
+      "end": 166.08,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "ensino",
+      "start": 166.08,
+      "end": 166.28,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "aqui",
+      "start": 166.28,
+      "end": 166.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "há",
+      "start": 166.66,
+      "end": 166.8,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "mais",
+      "start": 166.8,
+      "end": 166.94,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "de",
+      "start": 166.94,
+      "end": 167.12,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "10",
+      "start": 167.12,
+      "end": 167.26,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "anos.",
+      "start": 167.26,
+      "end": 167.6,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Eu",
+      "start": 168.16,
+      "end": 168.36,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "montei",
+      "start": 168.36,
+      "end": 168.62,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "um",
+      "start": 168.62,
+      "end": 168.76,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "guia",
+      "start": 168.76,
+      "end": 168.98,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "de",
+      "start": 168.98,
+      "end": 169.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "5",
+      "start": 169.16,
+      "end": 169.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "páginas",
+      "start": 169.42,
+      "end": 170.04,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "gratuita",
+      "start": 170.04,
+      "end": 170.9,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "sobre",
+      "start": 170.9,
+      "end": 171.16,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "como",
+      "start": 171.16,
+      "end": 171.38,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "fazer",
+      "start": 171.38,
+      "end": 171.68,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "isso",
+      "start": 171.68,
+      "end": 171.88,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "da",
+      "start": 171.88,
+      "end": 172.04,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "melhor",
+      "start": 172.04,
+      "end": 172.28,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "forma.",
+      "start": 172.28,
+      "end": 172.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Comenta",
+      "start": 172.96,
+      "end": 173.26,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "a",
+      "start": 173.26,
+      "end": 173.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "caneta",
+      "start": 173.42,
+      "end": 173.78,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "aqui",
+      "start": 173.78,
+      "end": 174.0,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "embaixo",
+      "start": 174.0,
+      "end": 174.42,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "que",
+      "start": 174.42,
+      "end": 174.72,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "eu",
+      "start": 174.72,
+      "end": 174.82,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "mando",
+      "start": 174.82,
+      "end": 174.96,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "pra",
+      "start": 174.96,
+      "end": 175.12,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "você.",
+      "start": 175.12,
+      "end": 175.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Boa!",
+      "start": 179.98,
+      "end": 180.66,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "Tá",
+      "start": 182.48,
+      "end": 182.6,
+      "speaker_id": null
+    },
+    {
+      "type": "word",
+      "text": "gravando?",
+      "start": 182.6,
+      "end": 182.94,
+      "speaker_id": null
+    }
+  ]
+}

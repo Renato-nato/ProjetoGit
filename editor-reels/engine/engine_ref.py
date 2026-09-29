@@ -47,9 +47,11 @@ def fnt(path: str, size: int) -> ImageFont.FreeTypeFont:
     return _fc[k]
 
 
-def word_sprite(text: str, size: int, color=LIME, font_path: str = FONT_COND, glow: float = 0.40) -> np.ndarray:
-    """Palavra com brilho suave da propria cor. RGBA float32 0..1 (premultiplicado)."""
-    k = (text, size, color, font_path, glow)
+def word_sprite(text: str, size: int, color=LIME, font_path: str = FONT_COND, glow: float = 0.40,
+                stroke: float = 0.0) -> np.ndarray:
+    """Palavra com brilho suave da propria cor. RGBA float32 0..1 (premultiplicado).
+    stroke = contorno preto em volta da letra (fracao do tamanho; 0 = sem contorno)."""
+    k = (text, size, color, font_path, glow, stroke)
     if k in _sc:
         return _sc[k]
     f = fnt(font_path, size)
@@ -59,12 +61,18 @@ def word_sprite(text: str, size: int, color=LIME, font_path: str = FONT_COND, gl
     base = Image.new("L", (w, h), 0)
     ImageDraw.Draw(base).text((pad - bb[0], pad - bb[1]), text, font=f, fill=255)
     a_txt = np.asarray(base, np.float32) / 255
+    a_ol = a_txt
+    if stroke > 0:  # letra + contorno (a parte do contorno fica preta: entra no alfa, nao na cor)
+        ol = Image.new("L", (w, h), 0)
+        ImageDraw.Draw(ol).text((pad - bb[0], pad - bb[1]), text, font=f, fill=255,
+                                stroke_width=max(1, round(size * stroke)), stroke_fill=255)
+        a_ol = np.maximum(np.asarray(ol, np.float32) / 255, a_txt)
     a_glow = np.asarray(base.filter(ImageFilter.GaussianBlur(size * 0.09)), np.float32) / 255 * glow
     a_sh = np.asarray(base.filter(ImageFilter.GaussianBlur(size * 0.06)), np.float32) / 255 * 0.62
     col = np.array(color, np.float32) / 255
-    # sombra escura por baixo, brilho colorido, texto por cima
-    A = np.clip(a_txt + a_glow * (1 - a_txt) + a_sh * (1 - a_txt) * (1 - a_glow), 0, 1)
-    rgb = (col * (a_txt + a_glow * (1 - a_txt))[..., None])
+    # sombra escura por baixo, brilho colorido, contorno preto, texto por cima
+    A = np.clip(a_ol + a_glow * (1 - a_ol) + a_sh * (1 - a_ol) * (1 - a_glow), 0, 1)
+    rgb = (col * (a_txt + a_glow * (1 - a_ol))[..., None])
     out = np.dstack([rgb, A]).astype(np.float32)
     _sc[k] = out
     _base[k] = pad - bb[1] + f.getmetrics()[0]
@@ -74,9 +82,9 @@ def word_sprite(text: str, size: int, color=LIME, font_path: str = FONT_COND, gl
 _base: dict = {}
 
 
-def baseline_of(text: str, size: int, color=LIME, font_path: str = FONT_COND) -> float:
-    word_sprite(text, size, color, font_path)
-    return _base[(text, size, color, font_path, 0.40)]
+def baseline_of(text: str, size: int, color=LIME, font_path: str = FONT_COND, stroke: float = 0.0) -> float:
+    word_sprite(text, size, color, font_path, stroke=stroke)
+    return _base[(text, size, color, font_path, 0.40, stroke)]
 
 
 def cap_h(size: int, font_path: str = FONT_COND) -> float:
@@ -251,10 +259,28 @@ def safe_segments(words, keep, env, gap, pad_in, pad_out) -> list[dict]:
     merged = joined
     out, t = [], 0.0
     for s, e in merged:
+        # inicio no quadro inteiro: s "no meio" de 2 quadros (ex. 13,25 s = quadro 397,5) fazia o arredondamento
+        # repetir quadro sim, quadro nao -> video "travando" (metade dos quadros) no trecho inteiro
+        s = round(s * FPS) / FPS
         n = max(1, round((e - s) * FPS))
         out.append({"s": s, "e": s + n / FPS, "o": t, "n": n})
         t += n / FPS
     return out
+
+
+def apply_lead(segs: list[dict], leads: list) -> list[dict]:
+    """'lead' do spec: tempos brutos onde o trecho comeca EXATAMENTE (mantem a pausa antes da fala, sem encurtar)."""
+    for t0 in leads:
+        for sg in segs:
+            if t0 <= sg["s"] < t0 + 1.5:
+                s0 = round(t0 * FPS) / FPS
+                sg["n"] = round((sg["e"] - s0) * FPS)
+                sg["s"] = s0
+    t = 0.0
+    for sg in segs:
+        sg["e"], sg["o"] = sg["s"] + sg["n"] / FPS, t
+        t += sg["n"] / FPS
+    return segs
 
 
 class ClipReader(Reader):

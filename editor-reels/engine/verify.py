@@ -6,14 +6,15 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from engine_ref import OUT, ROOT, Timeline, load_spec, load_words_all, safe_segments, voice_env  # noqa: E402
+from engine_ref import OUT, ROOT, Timeline, apply_lead, load_spec, load_words_all, safe_segments, voice_env  # noqa: E402
 
 sp = Path(sys.argv[1])
 spec = load_spec(sp)
 suffix = "_clip" if "clip" in sp.parent.name else "_ref"
 w = load_words_all(spec)
-tl = Timeline(safe_segments(w, spec["keep"], voice_env(ROOT / "raw" / f"{spec['source']}.mp4"),
-                            spec.get("gap", 0.28), spec.get("pad_in", 0.10), spec.get("pad_out", 0.12)))
+tl = Timeline(apply_lead(safe_segments(w, spec["keep"], voice_env(ROOT / "raw" / f"{spec['source']}.mp4"),
+                                       spec.get("gap", 0.28), spec.get("pad_in", 0.10), spec.get("pad_out", 0.12)),
+                         spec.get("lead", [])))
 env_out = voice_env(OUT / (spec["name"] + suffix) / f"{spec['name']}_nomusic.mp4")
 bad = []
 for x in w:
